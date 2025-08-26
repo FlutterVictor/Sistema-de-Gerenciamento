@@ -1,14 +1,39 @@
-/* Container principal do menu */
+/* =========================
+   Estilos gerais do menu
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f6fb;
+  color: #0b2340;
+}
+
+header {
+  background-color: #0b63d6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header .subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
 .menu-container {
-  max-width: 900px;       /* Largura máxima */
-  margin: 40px auto;      /* Centraliza horizontalmente */
+  max-width: 900px;
+  margin: 40px auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 30px;              /* Espaço entre seções */
+  gap: 30px;
 }
 
-/* Seções do menu */
 .menu-section {
   background: #fff;
   padding: 25px;
@@ -16,22 +41,19 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Título da seção */
 .menu-section h2 {
   color: #0b63d6;
   margin-bottom: 15px;
-  text-align: center;     /* centraliza o título da seção */
+  text-align: center;
 }
 
-/* Container de botões */
 .buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  justify-content: center; /* centraliza os botões horizontalmente */
+  justify-content: center;
 }
 
-/* Botões */
 .btn {
   text-decoration: none;
   background-color: #0b63d6;
@@ -39,11 +61,26 @@
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: bold;
-  transition: 0.3s;
   text-align: center;
-  min-width: 160px;       /* largura mínima */
+  min-width: 160px;
+  transition: all 0.2s;
 }
 
 .btn:hover {
   background-color: #0b2340;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+  }
 }
