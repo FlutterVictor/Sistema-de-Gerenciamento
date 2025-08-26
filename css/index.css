@@ -1,0 +1,49 @@
+/* Container principal do menu */
+.menu-container {
+  max-width: 900px;       /* Largura máxima */
+  margin: 40px auto;      /* Centraliza horizontalmente */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;              /* Espaço entre seções */
+}
+
+/* Seções do menu */
+.menu-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Título da seção */
+.menu-section h2 {
+  color: #0b63d6;
+  margin-bottom: 15px;
+  text-align: center;     /* centraliza o título da seção */
+}
+
+/* Container de botões */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center; /* centraliza os botões horizontalmente */
+}
+
+/* Botões */
+.btn {
+  text-decoration: none;
+  background-color: #0b63d6;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: center;
+  min-width: 160px;       /* largura mínima */
+}
+
+.btn:hover {
+  background-color: #0b2340;
+}
